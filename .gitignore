@@ -1,0 +1,211 @@
+
+# ==========================================
+# OPERATING SYSTEM
+# ==========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ==========================================
+# ENVIRONMENT & SECRETS
+# ==========================================
+
+.env
+.env.*
+!.env.example
+!.env.sample
+
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials.json
+
+# ==========================================
+# DEPENDENCIES
+# ==========================================
+
+node_modules/
+vendor/
+bower_components/
+
+# ==========================================
+# BUILD & DISTRIBUTION
+# ==========================================
+
+dist/
+build/
+out/
+target/
+release/
+coverage/
+.nyc_output/
+
+# ==========================================
+# LOGS & DEBUGGING
+# ==========================================
+
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================================
+# CACHE & TEMPORARY FILES
+# ==========================================
+
+.cache/
+.parcel-cache/
+.turbo/
+.next/
+.nuxt/
+.svelte-kit/
+.temp/
+.tmp/
+tmp/
+temp/
+
+# ==========================================
+# PYTHON
+# ==========================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+.eggs/
+.pytype/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ==========================================
+# JAVA / JVM
+# ==========================================
+
+*.class
+*.jar
+*.war
+*.ear
+.gradle/
+.mvn/timing.properties
+
+# ==========================================
+# IDE & EDITORS
+# ==========================================
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# JetBrains
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*.bak
+
+# Emacs
+*~
+\#*\#
+
+# ==========================================
+# FRONTEND FRAMEWORKS
+# ==========================================
+
+# React / Next.js
+.next/
+out/
+
+# Vue / Nuxt
+.nuxt/
+.vuepress/dist/
+
+# Angular
+.angular/
+.angular/cache/
+
+# Svelte
+.svelte-kit/
+
+# ==========================================
+# DOCKER
+# ==========================================
+
+.docker/
+docker-compose.override.yml
+
+# ==========================================
+# TESTING & REPORTS
+# ==========================================
+
+test-results/
+playwright-report/
+.nyc_output/
+junit.xml
+*.lcov
+
+# ==========================================
+# DATABASE & LOCAL DATA
+# ==========================================
+
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# ==========================================
+# GENERATED FILES
+# ==========================================
+
+*.min.js
+*.min.css
+*.map
+
+# ==========================================
+# LOCAL CONFIGURATION
+# ==========================================
+
+*.local
+*.local.*
+.env.local
+
+# ==========================================
+# BACKUP FILES
+# ==========================================
+
+*.orig
+*.rej
+*.old
+*.backup
+*.tmp
