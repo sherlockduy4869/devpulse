@@ -6,3 +6,13 @@ End-to-end data engineering project that measures software delivery performance 
 
 ## Status
 🚧 Work in progress: Phase 0 (project setup)
+
+## Development setup
+
+```bash
+python3.12 -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev]"
+pre-commit install
+pytest
+```
