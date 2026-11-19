@@ -20,3 +20,15 @@
 - DevPulse logic relies on **status categories** (To Do / In Progress / Done), never on status names.
 - Recovery time is computed from the **changelog** (transition to a Done-category status).
 - Incremental loads use the `updated` field as watermark.
+
+## API access
+- **Auth:** HTTP Basic (`email:token`) with a **scoped, read-only** API token (`read:jira-work`, `read:jira-user`), 90-day expiry.
+- **Base URL:** scoped tokens go through `https://api.atlassian.com/ex/jira/{cloudId}`; cloudId from `https://<site>.atlassian.net/_edge/tenant_info`.
+- **Config:** all values live in `.env` (see `.env.example`); custom field IDs are site-specific.
+
+| Endpoint | Purpose | Pagination |
+|---|---|---|
+| `GET /rest/api/3/myself` | Auth check | none |
+| `GET /rest/api/3/field` | Discover custom field IDs | none |
+| `GET /rest/api/3/search/jql` | Search work items by JQL (`fields` must be explicit) | `nextPageToken` / `isLast` |
+| `GET /rest/api/3/issue/{key}/changelog` | Field change history | `startAt` / `isLast` |
