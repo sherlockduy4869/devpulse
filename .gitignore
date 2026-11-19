@@ -209,3 +209,4 @@ junit.xml
 *.old
 *.backup
 *.tmp
+.scratch/
